@@ -7,6 +7,9 @@
 
   TEXT
   #2C2D35
+
+  TEXT INPUT
+  #E9D8DF
 */
 
 @font-face {
@@ -34,10 +37,6 @@
   font-size: 10px;
 }
 
-header {
-  background-color: yellowgreen;
-}
-
 main {
   background-color: blanchedalmond;
   grid-row: 2/-1;
@@ -56,14 +55,62 @@ footer {
   grid-template-columns: 1fr 5fr;
 }
 
-.one-three-one-row {
+.one-auto-one-row {
   grid-template-rows: 1fr 3fr 1fr;
 }
 
-.mar-top-fif {
-  margin-top: 15px;
+.gap-fiv {
+  gap: 5px;
 }
 
+/* -------- HEADER -------- */
+
+header {
+  background-color: #dabeca;
+  border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: 8fr 1fr 3fr 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 25px;
+}
+
+input[type="text"] {
+  padding: 0 10px;
+  background-color: #e9d8df;
+  border: none;
+  height: 3rem;
+  width: 100%;
+  border-radius: 25px;
+
+  font-size: 1.6rem;
+  font-family: 'National Park';
+
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.search-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  background-color: #e9d8df;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+img{
+  width: 50px;
+  border-radius: 50%;
+  grid-column: 4/5;
+  margin-left: 25px;
+}
 /* -------- DASHBOARD/ASIDE -------- */
 
 aside {
