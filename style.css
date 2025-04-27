@@ -1,3 +1,94 @@
+/* COLORS
+  #E3D8F1
+  #DABECA
+  #BF8B85
+  #AD8A64
+  #5D5F71
+
+  TEXT
+  #2C2D35
+*/
+
+@font-face {
+  font-family: "National Park";
+  src: url("./fonts/NationalPark-Regular.woff2") format("woff2"),
+    url("./fonts/NationalPark-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("./fonts/RedHatText-Regular.woff2") format("woff2"),
+    url("./fonts/RedHatText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+header {
+  background-color: yellowgreen;
+}
+
+main {
+  background-color: blanchedalmond;
+  grid-row: 2/-1;
+}
+
+footer {
+  background-color: goldenrod;
+  grid-column: 1/-1;
+}
+
 .grid {
   display: grid;
+}
+
+.one-five-fr {
+  grid-template-columns: 1fr 5fr;
+}
+
+.one-three-one-row {
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+/* -------- DASHBOARD/ASIDE -------- */
+
+aside {
+  background-color: #e3d8f1;
+  color: #2c2d35;
+  grid-row: 1/-1;
+}
+
+.dash-title-sec {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.dash-title {
+  font-size: 36px;
+  font-family: "Red Hat Text";
+  letter-spacing: 2.5px;
+  font-weight: 900;
+}
+
+.options {
+  margin: 0 auto;
+  width: 0.5fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 30px;
+  align-items: center;
+}
+
+.opt-icon {
+  justify-self: center;
 }
