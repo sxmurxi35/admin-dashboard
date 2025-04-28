@@ -2,11 +2,16 @@
   #E3D8F1
   #DABECA
   #BF8B85
-  #AD8A64
+  #C8B197
   #5D5F71
+  #EAD9D7
+
+  BOX SHADOW
+  #866746
 
   TEXT
   #2C2D35
+  #010304
 
   TEXT INPUT
   #E9D8DF
@@ -37,11 +42,6 @@
   font-size: 10px;
 }
 
-main {
-  background-color: blanchedalmond;
-  grid-row: 2/-1;
-}
-
 footer {
   background-color: goldenrod;
   grid-column: 1/-1;
@@ -56,7 +56,8 @@ footer {
 }
 
 .one-auto-one-row {
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 115px 3fr;
+  grid-auto-rows: 80px;
 }
 
 .gap-fiv {
@@ -104,10 +105,10 @@ input[type="text"]:focus {
   cursor: pointer;
 }
 
-header h2{
-  font-family: 'National Park';
+header h2 {
+  font-family: "National Park";
   font-size: 2.4rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.75px;
 
   margin-right: 5px;
   justify-self: end;
@@ -120,8 +121,9 @@ header img {
   justify-self: center;
   padding: 1px;
 
-  border:2px dashed #F0E5EA ;
+  border: 2px dashed #f0e5ea;
 }
+
 /* -------- DASHBOARD/ASIDE -------- */
 
 aside {
@@ -177,4 +179,57 @@ aside {
   background-color: #2c2d35;
   width: 70%;
   margin: auto;
+}
+
+/* -------- MAIN -------- */
+
+main {
+  background-color: #ead9d7;
+  grid-row: 2/-1;
+  border-radius: 10px 0 0 10px;
+
+  padding: 30px;
+}
+
+.project-heading {
+  font-family: "National Park";
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.project-display-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px 10px;
+
+  margin: 30px 20px;
+}
+
+.project-display-element {
+  background-color: #c8b197;
+  border-radius: 10px;
+
+  height: 450px;
+  box-shadow: 0 5px #866746;
+}
+
+.project-display-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-display-name {
+  padding: 10px;
+
+  font-size: 2.4rem;
+  font-family: "Red Hat Text";
+  letter-spacing: 1.5px;
+  color: #010304;
+}
+
+.project-display-desc {
+  padding: 0 15px;
+
+  font-size: 1.6rem;
+  font-family: "National Park";
 }
