@@ -200,7 +200,7 @@ main {
 .project-display-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px 10px;
+  gap: 25px 10px;
 
   margin: 30px 20px;
 }
@@ -232,4 +232,7 @@ main {
 
   font-size: 1.6rem;
   font-family: "National Park";
+
+  line-height: 1.6;
+  letter-spacing: 0.5px;
 }
