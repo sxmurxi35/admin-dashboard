@@ -45,7 +45,7 @@ html {
 
 /* ---------- HEADER ---------- */
 
-.dashboard-header {
+.page-header {
   grid-area: 1 / 2 / 2 / -1;
 
   background-color: #508991;
@@ -132,3 +132,33 @@ html {
   border-radius: 50%;
   outline: 3px solid #96c0c5;
 }
+
+/* ---------- DASHBOARD/ASIDE ---------- */
+
+.dashboard {
+  grid-area: 1/1/-1/2;
+  padding: 10px 25px;
+
+  background-color: #74b3ce;
+}
+
+.dash-title-sect {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-title {
+  font-family: "inter";
+  font-size: 3.6rem;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  color: #121212;
+}
+
+/* .divider{
+  height: 1px;
+  background-color: #000;
+  width: 60%;
+} */
