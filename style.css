@@ -1,3 +1,28 @@
+/* ---------- COLORS ---------- 
+  background: #004346
+
+  text input: #00888F
+
+*/
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("./fonts/SourceSans3-Roman.woff2") format("woff2"),
+    url("./fonts/SourceSans3-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.woff2") format("woff2"),
+    url("./fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ---------- GLOBAL/WHOLE PAGE ---------- */
 
 * {
@@ -18,3 +43,92 @@ html {
   gap: 10px;
 }
 
+/* ---------- HEADER ---------- */
+
+.dashboard-header {
+  grid-area: 1 / 2 / 2 / -1;
+
+  background-color: #508991;
+  padding: 10px 25px;
+  border-radius: 0 0 10px 10px;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.header-search {
+  background-color: #7bb0b7;
+  height: 40px;
+
+  grid-column: 1/7;
+
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+
+  padding: 5px 15px;
+  font-size: 1.6rem;
+  font-family: "Inter";
+  letter-spacing: 0.3px;
+}
+
+.header-search:focus {
+  outline: 2px solid #96c0c5;
+}
+
+.header-search::placeholder {
+  color: #272727;
+}
+
+.header-addons {
+  height: 100%;
+  padding: 0px 10px;
+  grid-column: 7/-1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+}
+
+.header-icon-bg {
+  background-color: #7bb0b7;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: 2px solid transparent;
+
+  transition: all 0.2s;
+}
+
+.header-icon-bg:hover {
+  outline: 2px solid #96c0c5;
+}
+
+.noti-bell {
+  grid-column: 5/6;
+  justify-self: end;
+}
+
+.color-mode {
+  grid-column: 4/5;
+  justify-self: end;
+}
+
+.header-user-image {
+  grid-column: -2/-1;
+  justify-self: center;
+
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+
+  border-radius: 50%;
+  outline: 3px solid #96c0c5;
+}
