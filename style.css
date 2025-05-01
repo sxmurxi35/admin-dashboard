@@ -6,19 +6,17 @@
 */
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("./fonts/SourceSans3-Roman.woff2") format("woff2"),
-    url("./fonts/SourceSans3-Roman.woff") format("woff");
-  font-weight: normal;
+  font-family: "NotoSans";
+  src: url("./fonts/NotoSans.woff2") format("woff2");
+  font-weight: 400 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Regular.woff2") format("woff2"),
-    url("./fonts/Inter-Regular.woff") format("woff");
-  font-weight: normal;
+  src: url("./fonts/Inter.woff2") format("woff2");
+  font-weight: 400 800;
   font-style: normal;
   font-display: swap;
 }
@@ -40,7 +38,7 @@ html {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 100px repeat(6, 1fr);
   grid-auto-rows: 1fr;
-  gap: 10px;
+  gap: 7px;
 }
 
 /* ---------- HEADER ---------- */
@@ -137,28 +135,72 @@ html {
 
 .dashboard {
   grid-area: 1/1/-1/2;
-  padding: 10px 25px;
+  padding: 0 25px 10px 25px;
 
   background-color: #74b3ce;
+
+  display: grid;
+  grid-template-rows: 100px repeat(3, 10px 1fr);
+  gap: 5px;
+  align-items: center;
 }
 
 .dash-title-sect {
-  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .dash-title {
-  font-family: "inter";
+  font-family: "notosans";
   font-size: 3.6rem;
-  font-weight: bold;
-  letter-spacing: 1.25px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
   color: #121212;
 }
 
-/* .divider{
+.divider {
   height: 1px;
   background-color: #000;
-  width: 60%;
-} */
+  justify-self: center;
+}
+
+.div-top {
+  width: 80%;
+}
+
+.dash-sect {
+  width: 70%;
+  /* padding-left: 20px; */
+  margin-top: 10px;
+  margin-left: 30px;
+  display: grid;
+  grid-template-rows: min-content;
+  justify-self: center;
+  gap: 10px;
+}
+
+.dash-sect-element {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  padding-right: 5px;
+  outline: 1px solid transparent;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.dash-sect-element:hover {
+  background-color: #86BDD5;
+  outline: 1px solid #95C5DA;
+  border-radius: 5px;
+}
+
+.element-name {
+  margin-left: 10px;
+  font-size: 2.4rem;
+  font-family: "inter";
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
