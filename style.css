@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "inter";
+  src: url(./fonts/Inter-VariableFont_opsz\wght.woff2) format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url(./fonts/Montserrat-VariableFont_wght.woff2) format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- GLOBAL/WHOLE PAGE ---------- */
+
+:root {
+  --header-bg: #000a0e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #000608;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 200px repeat(4, 1fr);
+}
+
+/* ---------- HEADER ---------- */
+
+.page-header {
+  grid-column: 2 / -1;
+
+  padding: 0 15px;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+
+  background-color: var(--header-bg);
+}
+
+.header-search {
+  grid-area: 1 / 1 / 2 / 7;
+
+  height: 40px;
+  border-radius: 20px;
+
+  background-color: #000f15;
+  outline: 2px solid transparent;
+  border: none;
+  padding: 5px 15px;
+
+  color: #cccfd0;
+  font-family: "montserrat";
+  font-size: 1.6rem;
+}
+
+.header-search:focus {
+  outline: 2px solid #001721;
+}
+
+.header-search::placeholder {
+  color: #333e43;
+}
