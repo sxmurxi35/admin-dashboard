@@ -138,6 +138,7 @@ html {
   padding: 0 25px 10px 25px;
 
   background-color: #74b3ce;
+  color: #07213e;
 
   display: grid;
   grid-template-rows: 100px repeat(3, 10px 1fr);
@@ -170,14 +171,12 @@ html {
 }
 
 .dash-sect {
-  width: 70%;
-  /* padding-left: 20px; */
-  margin-top: 10px;
-  margin-left: 30px;
+  width: 75%;
+  margin: 10px 0 10px 30px;
   display: grid;
   grid-template-rows: min-content;
   justify-self: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .dash-sect-element {
@@ -188,17 +187,64 @@ html {
   outline: 1px solid transparent;
   cursor: pointer;
 
-  transition: all 0.2s;
+  transition: all 0.25s;
+}
+
+.link {
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-left: 35px;
+  text-decoration: none;
+  width: min-content;
+}
+
+.support {
+  background-image: url("./icons/dash-icons/support-icon.svg");
+}
+
+.settings {
+  background-image: url("./icons/dash-icons/settings-icon.svg");
+}
+
+.friends {
+  background-image: url("./icons/dash-icons/request-icon.svg");
+  width: max-content;
+}
+
+.groups {
+  background-image: url("./icons/dash-icons/group-icon.svg");
+}
+
+.chats {
+  background-image: url("./icons/dash-icons/chat-icon.svg");
+}
+
+.calendar {
+  background-image: url("./icons/dash-icons/calendar-icon.svg");
+}
+
+.profile{
+  background-image: url("./icons/dash-icons/account-icon.svg");
+}
+
+.home{
+  background-image: url("./icons/dash-icons/home-icon.svg");
 }
 
 .dash-sect-element:hover {
-  background-color: #86BDD5;
-  outline: 1px solid #95C5DA;
+  background-color: #86bdd5;
+  outline: 1px solid #95c5da;
+  border-radius: 5px;
+}
+
+.link:hover {
+  background-color: #86bdd5;
+  outline: 1px solid #95c5da;
   border-radius: 5px;
 }
 
 .element-name {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   font-size: 2.4rem;
   font-family: "inter";
   letter-spacing: 0.5px;
