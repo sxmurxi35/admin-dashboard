@@ -192,7 +192,54 @@ body {
 /* ----------= MAIN =---------- */
 
 .page-main {
+  margin: 0 10px;
+  padding: 5px;
   grid-area: 2 / 2 / -1 / 6;
+  outline: 3px solid transparent;
+  border-radius: 15px;
+
+  transition: all 0.3s;
+}
+
+.page-main:hover {
+  outline: 3px solid hsl(197, 100%, 6%);
+}
+
+.main-title {
+  font-family: "montserrat";
+  color: #cccfd0;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.main-grid {
+  margin: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+}
+
+.main-grid-element {
+  border-radius: 10px;
+  padding: 15px 15px 20px 15px;
+  background-color: hsl(197, 100%, 5%);
+  color: #cccfd0;
+
+  box-shadow: 5px 0 0 inset hsl(197, 100%, 9%);
+}
+
+.element-title {
+  font-family: "montserrat";
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.element-desc {
+  padding-left: 10px;
+  font-family: "inter";
+  font-size: 1.6rem;
+  color: hsl(195, 4%, 70%);
 }
 
 /* ----------= ARTICLE - ANNOUNCEMENTS =---------- */
@@ -255,9 +302,72 @@ body {
   margin: 10px 5px;
 }
 
-.ann-divider{
+.ann-divider {
   margin: 0 auto;
   width: 50%;
   height: 1px;
   background-color: #cccfd0;
+}
+
+/* ----------= ARTICLE - ANNOUNCEMENTS =---------- */
+
+.page-trending {
+  margin-top: 20px;
+  grid-area: 4 / 6 / -1 / 7;
+  padding: 5px;
+  margin-right: 5px;
+
+  outline: 3px solid transparent;
+  border-radius: 15px;
+
+  transition: all 0.3s;
+}
+
+.page-trending:hover {
+  outline: 3px solid hsl(197, 100%, 6%);
+}
+
+.trending-title {
+  font-family: "montserrat";
+  color: #cccfd0;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.trending-sect {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: hsl(197, 100%, 5%);
+  border-radius: 10px;
+}
+
+.trending-prof{
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.prof-pic{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #00628f;
+}
+
+.prof-name-text{
+  font-family: 'inter';
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prof-name{
+  color: #cccfd0;
+  font-size: 1.6rem;
+}
+
+.prof-text{
+  padding-left: 15px;
+    color: hsl(195, 4%, 75%);
+  font-size: 1.2rem;
 }
