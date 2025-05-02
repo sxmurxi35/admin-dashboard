@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-/* ---------- GLOBAL/WHOLE PAGE ---------- */
+/* ----------= GLOBAL/WHOLE PAGE =---------- */
 
 :root {
   --header-bg: #000a0e;
@@ -40,12 +40,13 @@ body {
   grid-template-rows: 200px repeat(4, 1fr);
 }
 
-/* ---------- HEADER ---------- */
+/* ----------= HEADER =---------- */
 
 .page-header {
-  grid-column: 2 / -1;
+  grid-area: 1 / 2 / 1 / -1;
 
   padding: 0 15px;
+  margin-bottom: 20px;
 
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -53,6 +54,7 @@ body {
   align-items: center;
 
   background-color: var(--header-bg);
+  border-radius: 0 0 10px 10px;
 }
 
 .header-search {
@@ -179,4 +181,83 @@ body {
 
 .header-btn-big:active {
   background-color: hsl(200, 100%, 8%);
+}
+
+/* ----------= ASIDE - DASHBOARD =---------- */
+
+.page-dashboard {
+  grid-area: 1 / 1 / -1 / 2;
+}
+
+/* ----------= MAIN =---------- */
+
+.page-main {
+  grid-area: 2 / 2 / -1 / 6;
+}
+
+/* ----------= ARTICLE - ANNOUNCEMENTS =---------- */
+
+.page-announcements {
+  grid-area: 2 / 6 / 4 / 7;
+  padding: 5px;
+  margin-right: 5px;
+
+  outline: 3px solid transparent;
+  border-radius: 15px;
+
+  transition: all 0.3s;
+}
+
+.page-announcements:hover {
+  outline: 3px solid hsl(197, 100%, 6%);
+}
+
+.ann-title {
+  font-family: "montserrat";
+  color: #cccfd0;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.ann-links {
+  margin-top: 10px;
+  /* padding: 10px; */
+  background-color: hsl(197, 100%, 5%);
+  border-radius: 10px;
+}
+
+.ann-link {
+  padding: 15px;
+}
+
+.ann-link a:link,
+.ann-link a:visited {
+  color: #cccfd0;
+  text-decoration: none;
+  font-family: "inter";
+  font-size: 2rem;
+
+  transition: all 0.3s;
+}
+
+.ann-link a:hover,
+.ann-link a:active {
+  color: hsl(195, 4%, 65%);
+  text-decoration: none;
+  font-family: "inter";
+  font-size: 2rem;
+}
+
+.ann-link p {
+  color: hsl(195, 4%, 50%);
+  font-family: "inter";
+  font-size: 1.5rem;
+  margin: 10px 5px;
+}
+
+.ann-divider{
+  margin: 0 auto;
+  width: 50%;
+  height: 1px;
+  background-color: #cccfd0;
 }
