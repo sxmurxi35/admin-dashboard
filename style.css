@@ -38,6 +38,8 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 200px repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  gap: 5px;
 }
 
 /* ----------= HEADER =---------- */
@@ -187,6 +189,86 @@ body {
 
 .page-dashboard {
   grid-area: 1 / 1 / -1 / 2;
+  background-color: #00080c;
+
+  display: grid;
+  grid-template-rows: 200px repeat(3, 200px);
+  justify-content: center;
+}
+
+.dash-title {
+  padding-top: 50px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.dash-title-text {
+  color: #cccfd0;
+  font-family: montserrat;
+  font-size: 4.8rem;
+}
+
+.dash-links {
+  padding: 10px 35px;
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 30px;
+
+  justify-content: center;
+  height: min-content;
+}
+
+.dash-link {
+  font-family: "inter";
+  font-weight: 500;
+  text-decoration: none;
+  color: #cccfd0;
+  font-size: 2.4rem;
+  padding-left: 40px;
+  padding-right: 5px;
+
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 10px;
+
+  outline: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.dash-link:hover {
+  outline: 2px solid hsl(197, 100%, 9%);
+}
+
+.home {
+  background-image: url("./icons/dashboard/home-icon.svg");
+}
+
+.account {
+  background-image: url("./icons/dashboard/account-icon.svg");
+}
+
+.event {
+  background-image: url("./icons/dashboard/event-icon.svg");
+}
+
+.message {
+  background-image: url("./icons/dashboard/message-icon.svg");
+}
+
+.friend {
+  background-image: url("./icons/dashboard/friend-icon.svg");
+}
+
+.group {
+  background-image: url("./icons/dashboard/group-icon.svg");
+}
+
+.settings {
+  background-image: url("./icons/dashboard/settings-icon.svg");
+}
+
+.support {
+  background-image: url("./icons/dashboard/support-icon.svg");
 }
 
 /* ----------= MAIN =---------- */
@@ -341,33 +423,33 @@ body {
   border-radius: 10px;
 }
 
-.trending-prof{
+.trending-prof {
   display: grid;
   grid-template-columns: min-content 1fr;
 }
 
-.prof-pic{
+.prof-pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #00628f;
 }
 
-.prof-name-text{
-  font-family: 'inter';
+.prof-name-text {
+  font-family: "inter";
   padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.prof-name{
+.prof-name {
   color: #cccfd0;
   font-size: 1.6rem;
 }
 
-.prof-text{
+.prof-text {
   padding-left: 15px;
-    color: hsl(195, 4%, 75%);
+  color: hsl(195, 4%, 75%);
   font-size: 1.2rem;
 }
