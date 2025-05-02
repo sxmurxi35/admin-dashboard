@@ -194,6 +194,7 @@ body {
   display: grid;
   grid-template-rows: 200px repeat(3, 200px);
   justify-content: center;
+  border-radius: 0 10px 10px 0;
 }
 
 .dash-title {
@@ -452,4 +453,30 @@ body {
   padding-left: 15px;
   color: hsl(195, 4%, 75%);
   font-size: 1.2rem;
+}
+
+/* ----------= FOOTER =---------- */
+
+.page-footer{
+  background-color: var(--header-bg);
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits{
+  font-family: montserrat;
+  font-size: 1.6rem;
+  color: #cccfd0;
+  text-align: center;
+}
+
+.github-link:link, .github-link:visited{
+  color: #cccfd0;
+  text-decoration: none;
+}
+
+.github-link:hover, .github:active{
+  color: red;
 }
